@@ -16,6 +16,10 @@
         string nearestThousand = (num > 0 && num <= 100) ? "1000" : (num > 1000 && num <= 2000) ? "2000" : (num > 2000 && num <=3000)? "3000" : "Number out of range";
         System.Console.WriteLine(nearestThousand);
 
+        int number = 1000;
+        int nearestThou = (number / 1000 + 1) * 1000;
+        System.Console.WriteLine(nearestThou);
+
         int seconds = 350000;
 
         int minutes = seconds / 60;
