@@ -31,8 +31,39 @@
 
         int days = hours / 24;
         int hr = hours % 24;
+        System.Console.WriteLine("Days = " + days + ", hours = " + hr + ", minutes = " + min + ", seconds = " + sec + ".");
 
-        System.Console.WriteLine("Days = " + days + ", hours = " + hr + ", minutes = " + min + ", seconds = " + sec +".");
+
+        double heightInInches = 75;
+        double heightInCentimeters = (heightInInches * 2.54);
+        string HeightCategory;
+
+            if (heightInCentimeters < 150)
+        {
+            HeightCategory = "Dwarf";
+            }
+            else if (heightInCentimeters >= 150 && heightInCentimeters < 165)
+            {
+            HeightCategory = "Average Height";
+            }
+            else if (heightInCentimeters >= 165 && heightInCentimeters < 195)
+            {
+            HeightCategory = "Tall";
+            }
+            else if (heightInCentimeters >= 195)
+            {
+            HeightCategory = "Abnormal Height";
+            }
+            else
+            {
+                HeightCategory = "Something went wrong... Height not calculated.";
+            }
+            System.Console.WriteLine("Your height catergory based on your height " + heightInInches + " in inches is " + HeightCategory + ".");
+
+          
+        
+
+    
 
         System.Console.ReadKey();
     }
