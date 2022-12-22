@@ -60,10 +60,31 @@
             }
             System.Console.WriteLine("Your height catergory based on your height " + heightInInches + " in inches is " + HeightCategory + ".");
 
-          
-        
 
-    
+
+        int num1 = 60;
+        int num2 = 45;
+        int num3 = 123;
+
+        int FinalNumber;
+
+        if(num1 > num2 && num1 > num3)
+        {
+            FinalNumber = num1;
+        }
+        else if (num2 > num1 && num2 > num3)
+        {
+            FinalNumber = num2;
+        }
+        else
+        {
+            FinalNumber = num3;
+        }
+
+        System.Console.WriteLine(FinalNumber);
+
+
+
 
         System.Console.ReadKey();
     }
